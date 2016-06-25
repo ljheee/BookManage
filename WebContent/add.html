@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加Book</title>
+</head>
+<body>
+<h1> 添加Book</h1>
+
+<form action="save" method="post">  <!-- 此处action只写save,其完整请求组建是/book/save,但是此页面通过forward过来，已在/book中 -->
+	<div>
+		<label>图书名称 </label>
+		<input type="text" required="required" name="title" /> 
+	</div>
+	<div>
+		<label>图书作者</label>
+		<input required="required" type="text" name="author" /> 
+	</div>
+	<div>
+		<label>图书价格  </label>
+		<input required="required" placeholder="整型价格" type="text" name="price" /> 
+	</div>
+	<input type="submit" value="提交">
+
+</form>
+<a href="http://localhost:8080/BookBank/index.html">返回首页</a>
+
+</body>
+</html>
